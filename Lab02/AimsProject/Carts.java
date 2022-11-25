@@ -89,4 +89,22 @@ public class Carts {
         System.out.println("**************************************************");
     }
 
+    public void searchCartByTitle(String title){
+        int k = 0;
+        for (int i = 0; i < qtyOrdered; i++){
+            if (itemsOrdered[i].isMatchTitle(title)) 
+                itemsOrdered[i].printDetail();
+            k++;
+        }
+        if (k==0) System.out.println("Not found");
+    }
+    public void searchCartByID(String title){
+        int k=0;
+        for (int i = 0; i < qtyOrdered; i++){
+            if (itemsOrdered[i].isMatchID(title)) 
+                itemsOrdered[i].printDetail();
+            k++;
+        }
+        if (k==0) System.out.println("Not found");
+    }
 }
