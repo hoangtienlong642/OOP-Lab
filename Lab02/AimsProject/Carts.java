@@ -81,7 +81,6 @@ public class Carts {
     public void printCart (){
         System.out.println("***********************CART***********************");
         System.out.println("\nOrdered Items:");
-        int idxSorted[20],head=0,tail=0;
         for (int i = 0; i < qtyOrdered; i++){
             itemsOrdered[i].printDetail();
         }
@@ -101,7 +100,7 @@ public class Carts {
     public void search(int id){
         int k=0;
         for (int i = 0; i < qtyOrdered; i++){
-            if (itemsOrdered[i].isMatch(title)) 
+            if (itemsOrdered[i].isMatch(id)) 
                 itemsOrdered[i].printDetail();
             k++;
         }
