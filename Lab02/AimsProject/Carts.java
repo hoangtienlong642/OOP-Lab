@@ -91,18 +91,20 @@ public class Carts {
     public void search(String title){
         int k = 0;
         for (int i = 0; i < qtyOrdered; i++){
-            if (itemsOrdered[i].isMatch(title)) 
+            if (itemsOrdered[i].isMatch(title)) {
                 itemsOrdered[i].printDetail();
-            k++;
+                k++;
+            }
         }
         if (k==0) System.out.println("Not found");
     }
     public void search(int id){
         int k=0;
         for (int i = 0; i < qtyOrdered; i++){
-            if (itemsOrdered[i].isMatch(id)) 
+            if (itemsOrdered[i].isMatch(id)) {
                 itemsOrdered[i].printDetail();
-            k++;
+                k++;
+            }
         }
         if (k==0) System.out.println("Not found");
     }
