@@ -68,7 +68,7 @@
             getCount();
         }
         public boolean isMatch (String key ){
-            if (key == this.title) return true;
+            if (key.equals(this.title)) return true;
             else return false;
         }
         public boolean isMatch (int key ){
