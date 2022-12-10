@@ -47,20 +47,7 @@ public class Cart {
         return true;
     }
 
-    //addMedia which allows to pass an arbitrary number of arguments for Media
-    /* 
-    public boolean addMedia(Media... MediaList){
-        if (qtyOrdered + MediaList.length > MAX_NUMBERS_ORDERED){
-            System.out.println("The cart is full. Can't add more!");
-            return false;
-        }
-        for (Media media : MediaList){
-            itemsOrdered.add(media);
-            qtyOrdered++;
-        }
-        return true;
-    }
-    */
+
     //remove a Media from cart
     public boolean removeMedia(Media media){
         if (!itemsOrdered.contains(media)){

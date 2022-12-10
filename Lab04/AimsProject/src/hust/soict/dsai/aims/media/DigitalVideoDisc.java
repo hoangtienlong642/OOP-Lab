@@ -53,14 +53,14 @@ public class DigitalVideoDisc extends Disc implements Playable{
             return true;
         return false;
     }
-    public void printDetail() {
-        System.out.format("DVD detail:\n"
-                            + "Title: %s\n"
-                            + "Category: %s\n"
-							+ "Director: %s\n"
-							+ "Length: %d\n"
-                            + "Cost: %.2f$\n\n", title, category,director,length, cost);
-    }
+    // public void printDetail() {
+    //     System.out.format("DVD detail:\n"
+    //                         + "Title: %s\n"
+    //                         + "Category: %s\n"
+	// 						+ "Director: %s\n"
+	// 						+ "Length: %d\n"
+    //                         + "Cost: %.2f$\n\n", title, category,director,length, cost);
+    // }
 
     public void play() {
         // TODO Auto-generated method stub

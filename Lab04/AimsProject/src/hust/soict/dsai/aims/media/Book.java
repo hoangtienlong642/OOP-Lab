@@ -41,17 +41,17 @@ public class Book extends Media{
             authors.remove(authorName);
         }
     }
-	public void printDetail() {
-        System.out.format("Book detail:\n"
-                            + "Title: %s\n"
-                            + "Category: %s\n"
-							+ "Authors:\n", title, category);
+	// public void printDetail() {
+    //     System.out.format("Book detail:\n"
+    //                         + "Title: %s\n"
+    //                         + "Category: %s\n"
+	// 						+ "Authors:\n", title, category);
 
-		for (int i =0; i<= authors.size(); i++){
-			String author = authors.get(i);
-			System.out.println(author);
-		}
-		System.out.format( "Cost: %.2f$\n\n", cost);
+	// 	for (int i =0; i<= authors.size(); i++){
+	// 		String author = authors.get(i);
+	// 		System.out.println(author);
+	// 	}
+	// 	System.out.format( "Cost: %.2f$\n\n", cost);
 								
-    }
+    // }
 }

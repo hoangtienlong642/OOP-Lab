@@ -79,7 +79,7 @@ public class Aims {
         store1.addMedia(book1);
         store1.addMedia(book2);
         store1.addMedia(cd1);
-        store1.displayStore();
+        // store1.displayStore();
         // Add Items to cart
         cart1.addMedia(disc1);
         cart1.addMedia(cd1);
