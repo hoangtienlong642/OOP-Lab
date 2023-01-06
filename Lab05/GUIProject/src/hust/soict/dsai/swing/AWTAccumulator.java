@@ -14,13 +14,13 @@ public class AWTAccumulator extends Frame {
 
 	public AWTAccumulator() {
 		setLayout(new GridLayout(2, 2));
-		add(new Label("Le Xuan Thinh - 20176880 - Enter an Integer: "));
+		add(new Label("Enter an Integer: "));
 
 		tfInput = new TextField(10);
 		add(tfInput);
 		tfInput.addActionListener(new TFInputListener());
 
-		add(new Label("Le Xuan Thinh - 20176880 - The Accumulated sum is : "));
+		add(new Label("The Accumulated sum is : "));
 		tfOutput = new TextField(10);
 		tfOutput.setEditable(false);
 		add(tfOutput);
