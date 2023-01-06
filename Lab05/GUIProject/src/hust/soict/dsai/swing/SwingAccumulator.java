@@ -17,12 +17,12 @@ public class SwingAccumulator extends JFrame {
 	public SwingAccumulator() {
 		Container cp = getContentPane();
 		cp.setLayout(new GridLayout(2, 2));
-		cp.add(new JLabel("Le Xuan Thinh - 20176880 - Enter an Integer "));
+		cp.add(new JLabel("Enter an Integer "));
 		tfInput = new JTextField(10);
 		cp.add(tfInput);
 		tfInput.addActionListener(new TFInputListener());
 
-		cp.add(new JLabel("Le Xuan Thinh - 20176880 - The Accumulated sum is: "));
+		cp.add(new JLabel("The Accumulated sum is: "));
 		tfOutput = new JTextField(10);
 		tfOutput.setEditable(false);
 		cp.add(tfOutput);
